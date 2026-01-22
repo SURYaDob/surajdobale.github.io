@@ -42,6 +42,10 @@
       animation: float 6s infinite ease-in-out;
     }
 
+    header nav {
+      margin-bottom: 20px;
+    }
+
     header nav a {
       display: inline-block;
       margin: 0 10px;
@@ -156,19 +160,20 @@
     @keyframes slideUp { from { opacity:0; transform:translateY(40px); } to { opacity:1; transform:translateY(0); } }
     @keyframes glowFade { from { opacity:0; filter:blur(10px); } to { opacity:1; filter:blur(0); } }
     @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(40px); } }
-
   </style>
 </head>
 <body>
 
 <header>
-  <nav>
-  <meta name="description" content="Suraj Dobale - Java Developer Portfolio. Skills in Java, Spring Boot, SQL, HTML, CSS. PG-DAC Graduate from CDAC Akurdi.">
+<meta name="description" content="Suraj Dobale - Java Developer Portfolio. Skills in Java, Spring Boot, SQL, HTML, CSS. PG-DAC Graduate from CDAC Akurdi.">
 <meta name="keywords" content="Suraj Dobale, Java Developer, CDAC, PG-DAC, Java Portfolio, Nagpur">
 <meta name="author" content="Suraj Dobale">
+  <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#social">Connect</a>
   </nav>
   <h1>Suraj Dobale</h1>
   <p style="font-size:1.3rem; margin-top:10px;"><span id="typing">Java Developer | Full Stack Enthusiast</span></p>
@@ -201,14 +206,21 @@
 </section>
 
 <section id="resume">
-  <h2>Resume</h2>
+  <h2>Resume & Qualifications</h2>
+  <ul>
+    <li><strong>SSC:</strong> Completed</li>
+    <li><strong>HSC:</strong> Completed</li>
+    <li><strong>BSc:</strong> Completed (with small college-level project)</li>
+    <li><strong>Masters/PG-DAC:</strong> Completed at CDAC Akurdi</li>
+  </ul>
+  <br>
   <a class="btn" href="resume.pdf.pdf" target="_blank">Download Resume (Java)</a>
   <br><br>
   <a class="btn" href="resume1.pdf.pdf" target="_blank">Download Resume (Full Stack)</a>
 </section>
 
-<section id="social" style="text-align:center; margin:30px 0;">
-  <h2>Connect with Me</h2>
+<section id="social">
+  <h2 style="text-align:center;">Connect with Me</h2>
   <div>
     <a href="mailto:surajdobale29@gmail.com" target="_blank" class="social-btn social-gmail"><i class="fas fa-envelope"></i></a>
     <a href="https://www.instagram.com/yourusername" target="_blank" class="social-btn social-instagram"><i class="fab fa-instagram"></i></a>
