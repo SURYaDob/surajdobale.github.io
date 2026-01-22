@@ -113,19 +113,33 @@
       box-shadow: 0 0 25px rgba(59,130,246,0.8);
     }
 
-    /* Social Media Buttons */
+    /* Social Media Buttons - centered with platform colors */
+    #social div {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
     .social-btn {
-      display:inline-block;
-      margin:0 10px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:60px;
+      height:60px;
+      border-radius:12px;
+      color:white;
       font-size:28px;
-      color:#93c5fd;
       transition:all 0.3s ease;
     }
 
-    .social-btn:hover {
-      color:#3b82f6;
-      transform:scale(1.2);
-    }
+    .social-btn:hover { transform:scale(1.2); }
+
+    .social-gmail { background:#D44638; }
+    .social-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+    .social-facebook { background:#1877F2; }
+    .social-linkedin { background:#0A66C2; }
 
     /* Typing effect */
     @keyframes typing { from { width:0 } to { width:100% } }
@@ -142,15 +156,16 @@
     @keyframes slideUp { from { opacity:0; transform:translateY(40px); } to { opacity:1; transform:translateY(0); } }
     @keyframes glowFade { from { opacity:0; filter:blur(10px); } to { opacity:1; filter:blur(0); } }
     @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(40px); } }
+
   </style>
 </head>
 <body>
 
 <header>
-<meta name="description" content="Suraj Dobale - Java Developer Portfolio. Skills in Java, Spring Boot, SQL, HTML, CSS. PG-DAC Graduate from CDAC Akurdi.">
+  <nav>
+  <meta name="description" content="Suraj Dobale - Java Developer Portfolio. Skills in Java, Spring Boot, SQL, HTML, CSS. PG-DAC Graduate from CDAC Akurdi.">
 <meta name="keywords" content="Suraj Dobale, Java Developer, CDAC, PG-DAC, Java Portfolio, Nagpur">
 <meta name="author" content="Suraj Dobale">
-  <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -194,11 +209,11 @@
 
 <section id="social" style="text-align:center; margin:30px 0;">
   <h2>Connect with Me</h2>
-  <div style="margin-top:15px;">
-    <a href="mailto:surajdobale29@gmail.com" target="_blank" class="social-btn"><i class="fas fa-envelope"></i></a>
-    <a href="https://www.instagram.com/yourusername" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/yourusername" target="_blank" class="social-btn"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+  <div>
+    <a href="mailto:surajdobale29@gmail.com" target="_blank" class="social-btn social-gmail"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.instagram.com/yourusername" target="_blank" class="social-btn social-instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/yourusername" target="_blank" class="social-btn social-facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="social-btn social-linkedin"><i class="fab fa-linkedin"></i></a>
   </div>
 </section>
 
