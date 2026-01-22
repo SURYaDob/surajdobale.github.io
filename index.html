@@ -5,100 +5,108 @@
   <title>Suraj Dobale | Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #f4f6f8;
-      color: #333;
+      background: #0f172a;
+      color: #e5e7eb;
       scroll-behavior: smooth;
     }header {
-  background: linear-gradient(135deg, #1f2937, #2563eb);
-  color: white;
-  padding: 60px 20px;
+  background: radial-gradient(circle at top, #1e3a8a, #020617);
+  color: #f9fafb;
+  padding: 80px 20px;
   text-align: center;
-  animation: fadeDown 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  animation: glowFade 1.2s ease-in-out;
 }
 
-header img {
-  width: 140px;
-  height: 140px;
+header::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(59,130,246,0.25);
   border-radius: 50%;
-  border: 4px solid white;
-  margin-bottom: 15px;
-  object-fit: cover;
+  top: -100px;
+  right: -100px;
+  filter: blur(80px);
+  animation: float 6s infinite ease-in-out;
 }
 
 section {
-  padding: 30px 20px;
+  padding: 35px 25px;
   max-width: 900px;
   margin: auto;
-  background: white;
-  margin-top: 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  animation: fadeUp 0.8s ease-in-out;
+  background: rgba(30,41,59,0.85);
+  margin-top: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+  animation: slideUp 0.9s ease forwards;
+}
+
+h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
 }
 
 h2 {
-  color: #1f2937;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 5px;
+  color: #93c5fd;
+  border-bottom: 1px solid rgba(148,163,184,0.3);
+  padding-bottom: 8px;
 }
 
 ul {
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: #2563eb;
+  margin-top: 14px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   color: white;
   text-decoration: none;
-  border-radius: 25px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(59,130,246,0.4);
 }
 
 .btn:hover {
-  background: #1d4ed8;
-  transform: scale(1.05);
-}
-
-.card {
-  background: #f9fafb;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 35px rgba(59,130,246,0.8);
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-  background: #1f2937;
-  color: white;
+  padding: 25px;
+  margin-top: 40px;
+  background: #020617;
+  color: #94a3b8;
+  font-size: 0.9rem;
 }
 
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes glowFade {
+  from { opacity: 0; filter: blur(10px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(40px); }
 }
 
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body><header>
-<meta name="description" content="Suraj Dobale - Java Developer Portfolio. Skills in Java, Spring Boot, SQL, HTML, CSS. PG-DAC Graduate from CDAC Akurdi.">
+  <meta name="description" content="Suraj Dobale - Java Developer Portfolio. Skills in Java, Spring Boot, SQL, HTML, CSS. PG-DAC Graduate from CDAC Akurdi.">
 <meta name="keywords" content="Suraj Dobale, Java Developer, CDAC, PG-DAC, Java Portfolio, Nagpur">
 <meta name="author" content="Suraj Dobale">
   <h1>Suraj Dobale</h1>
